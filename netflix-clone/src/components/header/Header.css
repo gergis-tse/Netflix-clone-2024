@@ -11,6 +11,7 @@
     transition:all 0.5s ;
     transition-timing-function: ease-in;
     z-index: 1;
+    background: #000;
 }
 .header_container{
     width: 90%;
