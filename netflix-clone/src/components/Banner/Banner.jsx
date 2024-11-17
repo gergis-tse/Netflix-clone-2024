@@ -5,8 +5,8 @@ import "./Banner.css";
 import axios from "../../utils/axios";
 import requests from "../../utils/requests";
 
-const Banner = () => {
-  const [movie, setMovie] = useState({});
+function Banner(){
+  const [movie, setMovie] = useState([]);
 
   useEffect(() => {
     (async () => {

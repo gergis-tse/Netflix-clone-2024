@@ -1,13 +1,13 @@
 
 import "./Header.css"
-import  Netflixlogo from"../../assets/Images/Netflixlogo.Webp"
+import  Netflixlogo from"../../assets/Images/NetflixLogo (2).png"
 import SearchIcon from "@mui/icons-material/Search";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 function Header() {
   return (
-    <div className="header_outer_container">
+    <div className="header_outer_container ">
       <div className="header_container">
         <div className="header_left">
           <ul>

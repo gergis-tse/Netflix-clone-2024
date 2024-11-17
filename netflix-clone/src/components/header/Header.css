@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(red, green, blue);
-    background-color: transparent;
+    /* background-color: rgb(red, green, blue); */
+    /* background-color: transparent; */
     height: 10vh;
     color: white;
     transition:all 0.5s ;
@@ -34,3 +34,7 @@
     align-items: center;
     list-style-type: none;
 }
+
+/* @media(max_width:768px){
+
+} */
