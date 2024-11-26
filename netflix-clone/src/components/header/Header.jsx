@@ -7,14 +7,14 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 function Header() {
   return (
-    <div className="header_outer_container ">
+    <div className="header_outer_container  ">
       <div className="header_container">
         <div className="header_left">
           <ul>
+            
             <li>
               <img src={Netflixlogo} alt="Netflixlogo" width={100} />
             </li>
-            <li>Netflix</li>
             <li>Home</li>
             <li>Tvshows</li>
             <li>Movies</li>
@@ -45,3 +45,42 @@ function Header() {
 }
 
 export default Header
+
+
+
+// import Container from "react-bootstrap/Container";
+// import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+
+// function BasicExample() {
+//   return (
+//     <Navbar expand="sm" className="bg-body-tertiary  ">
+//       <Container className="header_outer_container">
+//         <Navbar.Brand>
+//           <img src={Netflixlogo} alt="Netflixlogo" width={100} />
+//         </Navbar.Brand>
+        
+        
+//           <Nav className="me-auto">
+//             <NavDropdown title="Netflix" id="basic-nav-dropdown">
+//               <NavDropdown.Item href="#home">Home</NavDropdown.Item>
+//               <NavDropdown.Item href="#">Tvshows</NavDropdown.Item>
+//               <NavDropdown.Item href="#">Movies</NavDropdown.Item>
+
+//               <NavDropdown.Item href="#">Latest</NavDropdown.Item>
+//               <NavDropdown.Item href="#">Browser by Languages</NavDropdown.Item>
+//             </NavDropdown>
+            
+//           </Nav>
+       
+//       </Container>
+//       <Navbar.Brand>
+//         <SearchIcon />
+//         <CircleNotificationsIcon />
+//         <AccountBoxIcon />
+//         <ArrowDropDownIcon />
+//       </Navbar.Brand>
+//     </Navbar>
+//   );
+// }
+
+// export default BasicExample;

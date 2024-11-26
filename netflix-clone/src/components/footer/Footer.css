@@ -14,6 +14,7 @@
     justify-content: space-between;
     margin-left: 10px;
     color: white;
+     gap: 10px;
 }
 .footer_data{
     display: flex;
@@ -43,3 +44,13 @@
     font-size: 12px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width:1100px){
+    .footer_outer_container ul{
+display: inline-block;
+font-size: 15px;
+  }
+.service_code{
+    width: 20%;
+}
+} 

@@ -9,28 +9,42 @@ function Banner(){
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
-    (async () => {
-      try {
+    // (async () => {
+    //   try {
      
-        const request = await axios.get(
-          requests.fetchNetflixOriginals
-        );
-        console.log("API_Response:",request.data);
+    //     const request = await axios.get(
+    //       requests.fetchNetflixOriginals
+    //     );
+    //     console.log("API_Response:",request.data);
         
-        setMovie(
-          request.data.results[
-            Math.floor(Math.random() * request.data.results.length)
-          ]
-        );
-      } catch (error) {
-        console.log("error", error);
-      }
-    })();
+    //     setMovie(
+    //       request.data.results[
+    //         Math.floor(Math.random() * request.data.results.length)
+    //       ]
+    //     );
+    //   } catch (error) {
+    //     console.log("error", error);
+    //   }
+    // })();
+      axios
+        .get(requests.fetchNetflixOriginals)
+        .then((res) => {
+          console.log("API_Response:", res.data);
+
+          setMovie(
+            res.data.results[
+              Math.floor(Math.random() * res.data.results.length)
+            ]
+          );
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
   }, []);
 
-  function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  }
+  const truncate=(str, n) =>
+    str?.length > n ? str.slice(0,n) + "..." : str;
+  
 
   return (
     <header

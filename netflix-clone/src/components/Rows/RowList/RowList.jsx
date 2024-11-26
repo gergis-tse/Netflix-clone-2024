@@ -1,5 +1,4 @@
 import Row from "../Row/Row"
-import "./RowList.css"
 import requests from "../../../utils/requests";
 function RowList() {
   return (
@@ -16,7 +15,8 @@ function RowList() {
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title=" Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-      <Row title="Tv Show" fetchUrl={requests.fetchTvShow}/>
+      <Row title="Tv Show" fetchUrl={requests.fetchTvShow} />
+      <Row title="MUSIC" fetchUrl={requests.Music} />
     </>
   );
 }
